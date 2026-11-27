@@ -1,0 +1,82 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --couleur-etiquette: #dbeafe;
+  --couleur-accent: #1d4ed8;
+  --couleur-sur-accent: #ffffff;
+  --couleur-focus: #b45309;
+
+  --espace-sm: 0.5rem;
+  --espace-md: 1rem;
+  --espace-lg: 1.5rem;
+
+  --arrondi: 0.5rem;
+}
+
+/* 5. Largeur limitée et centrée */
+.cv {
+  max-width: 60rem;
+  margin: 0 auto;
+  padding: var(--espace-md);
+}
+
+/* 4. En-tête : photo et texte côte à côte */
+.cv__entete {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--espace-md);
+}
+
+.cv__photo {
+  order: -1;
+  border-radius: var(--arrondi);
+}
+
+.coordonnees {
+  flex: 1 1 100%;
+}
+
+/* 4. Étiquettes de compétences qui passent à la ligne */
+.competences {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--espace-sm);
+  padding: 0;
+  list-style: none;
+}
+
+.competences__item {
+  padding: var(--espace-sm) var(--espace-md);
+  background-color: var(--couleur-etiquette);
+  border-radius: var(--arrondi);
+}
+
+.competences__item--principale {
+  background-color: var(--couleur-accent);
+  color: var(--couleur-sur-accent);
+}
+
+/* 7. Focus clavier visible */
+:focus-visible {
+  outline: 0.125rem solid var(--couleur-focus);
+  outline-offset: 0.125rem;
+}
+
+/* 6. Mobile d'abord : une colonne par défaut, deux colonnes dès 768px */
+.rubrique {
+    width: 100%;
+  }
+@media (min-width: 768px) {
+  .cv__contenu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--espace-lg);
+  }
+
+  .rubrique {
+    width: 48%;
+  }
+}

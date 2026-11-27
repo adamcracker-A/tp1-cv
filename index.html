@@ -6,23 +6,25 @@
   <title>CV – Adam, Développeur Web Full Stack (Laravel / React)</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="cv">
 
-  <header>
-    <h1>Adam</h1>
-    <p>Développeur Web Full Stack – Laravel & React</p>
-    <img src="photo adam.jpg" alt="photo adam">
-    <ul>
-      <li><a href="mailto:adam@example.com">adam@example.com</a></li>
-      <li><a href="tel:+212600000000">+212 6 00 00 00 00</a></li>
-      <li>Oujda, Maroc</li>
+  <header class="cv__entete">
+    
+      <h1 class="cv__nom">Adam</h1>
+      <p class="cv__titre">Développeur Web Full Stack – Laravel & React</p>
+    
+    <img class="cv__photo" src="photo_adam.jpg" alt="Portrait d'Adam, étudiant en développement digital" width="150" height="150">
+    <ul class="coordonnees">
+      <li class="coordonnees__item"><a class="coordonnees__lien" href="mailto:boubouadam32@gmail.com">boubouadam32@gmail.com</a></li>
+      <li class="coordonnees__item"><a class="coordonnees__lien" href="tel:+212607430562">+212 6 07 43 05 62</a></li>
+      <li class="coordonnees__item">Oujda, Maroc</li>
     </ul>
   </header>
 
-  <main>
+  <main class="cv__contenu">
 
-    <section>
-      <h2>Profil</h2>
+    <section class="rubrique rubrique--large">
+      <h2 class="rubrique__titre">Profil</h2>
       <p>
         Étudiant en deuxième année de Développement Digital (option Web Full Stack),
         spécialisé en Laravel et React. Rigoureux, attaché à un code propre et
@@ -31,70 +33,70 @@
       </p>
     </section>
 
-    <section>
-      <h2>Formation</h2>
-      <article>
-        <h3>Technicien spécialisé en Développement Digital Web Full Stack</h3>
-        
-          <time datetime="2025-09">Septembre 2025</time> –
-          <time datetime="2027-07">Juillet 2027</time>
-        
+    <section class="rubrique">
+      <h2 class="rubrique__titre">Formation</h2>
+      <article class="entree">
+        <h3 class="entree__titre">Technicien spécialisé en Développement Digital – Web Full Stack</h3>
+        <p class="entree__lieu">ISTA Lazaret Oujda (OFPPT)</p>
+        <p class="entree__dates">
+          <time datetime="2025-09">Septembre 2024</time> –
+          <time datetime="2027-07">Juillet 2026</time>
+        </p>
       </article>
     </section>
 
-    <section>
-      <h2>Expériences</h2>
-      <article>
-        <h3>Tourismos Maroc – Plateforme touristique</h3>
-        
-          <time datetime="2026-06">Juin 2026</time> –
-          <time datetime="2026-08">Août 2026</time>
-        
+    <section class="rubrique">
+      <h2 class="rubrique__titre">Expériences</h2>
+      <article class="entree">
+        <h3 class="entree__titre">Système de gestion d'une pharmacie</h3>
+        <p class="entree__dates">
+          <time datetime="2026-06">Juin 2025</time> –
+          <time datetime="2026-08">Août 2025</time>
+        </p>
         <p>
-          Plateforme web sur le thème de la Coupe du Monde 2030 au Maroc,
-          développée avec React, Laravel et MySQL.
+          Système de gestion d'une pharmacie développé en utilisant PHP et MySQL. Le projet comprend la gestion des stocks, des ventes et des clients.
         </p>
       </article>
-
-      <article>
-        <h3>Blue Pearl Beach – Site d'hôtel</h3>
-        <p>
+      <article class="entree">
+        <h3 class="entree__titre">Blue Pearl Beach – Site d'hôtel</h3>
+        <p class="entree__dates">
           <time datetime="2026-07">Juillet 2026</time> –
           <time datetime="2026-08">Août 2026</time>
         </p>
         <p>
-          Site web pour un hôtel situé à Saïdia.
+          Site web pour un hôtel situé à Saïdia. develope en REACT et PHP, MySQL.
         </p>
       </article>
     </section>
 
-    <section>
-      <h2>Compétences</h2>
-      <ul>
-        <li>HTML5 / CSS3</li>
-        <li>JavaScript</li>
-        <li>React</li>
-        <li>PHP / Laravel</li>
-        <li>MySQL</li>
-        <li>Git / GitHub</li>
+    <section class="rubrique">
+      <h2 class="rubrique__titre">Compétences</h2>
+      <ul class="competences">
+        <li class="competences__item">HTML5 / CSS3</li>
+        <li class="competences__item">JavaScript</li>
+        <li class="competences__item competences__item--principale">React</li>
+        <li class="competences__item competences__item--principale">PHP / Laravel</li>
+        <li class="competences__item competences__item--principale">Programmation orientée objet (POO)</li>
+        <li class="competences__item competences__item--principale">MySQL</li>
+        <li class="competences__item">Git / GitHub</li>
       </ul>
     </section>
 
-    <section>
-      <h2>Langues</h2>
-      <ul>
-        <li>Arabe : langue maternelle</li>
-        <li>Français : DELF B2</li>
-        <li>Anglais : Avancé</li>
+    <section class="rubrique">
+      <h2 class="rubrique__titre">Langues</h2>
+      <ul class="langues">
+        <li class="langues__item">Arabe : langue maternelle</li>
+        <li class="langues__item">Français : DELF B2</li>
+        <li class="langues__item">Anglais : Avancée</li>
       </ul>
     </section>
 
   </main>
 
-  <footer>
-    <ul>
-      <li><a href="https://github.com/adamcracker-A">GitHub</a></li>
-      <li><a href="https://www.linkedin.com/in/boubou-adam-256478302/">LinkedIn</a></li>
+  <footer class="cv__pied">
+    <ul class="reseaux">
+      <li class="reseaux__item"><a class="reseaux__lien" href="https://github.com/adamcracker-A">GitHub</a></li>
+      <li class="reseaux__item"><a class="reseaux__lien" href="https://www.linkedin.com/in/boubou-adam-256478302/">LinkedIn</a></li>
     </ul>
   </footer>
 
